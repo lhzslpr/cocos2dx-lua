@@ -5,3 +5,6 @@ res/
 simulator/win32/res/
 simulator/win32/src/
 *.dll
+*.exe
+*.ilk
+*.pdb
