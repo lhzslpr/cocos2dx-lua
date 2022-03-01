@@ -71,6 +71,18 @@ bool AppDelegate::applicationDidFinishLaunching()
     //LuaStack* stack = engine->getLuaStack();
     //register_custom_function(stack->getLuaState());
 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
+	FileUtils::getInstance()->addSearchPath("../../src");
+	FileUtils::getInstance()->addSearchPath("../../res");
+	//FileUtils::getInstance()->addSearchPath("src");
+	//FileUtils::getInstance()->addSearchPath("res");
+#else
+
+	FileUtils::getInstance()->addSearchPath("src");
+	FileUtils::getInstance()->addSearchPath("res");
+#endif
+
+
 #if (COCOS2D_DEBUG > 0) && (CC_CODE_IDE_DEBUG_SUPPORT > 0)
     // NOTE:Please don't remove this call if you want to debug with Cocos Code IDE
     auto runtimeEngine = RuntimeEngine::getInstance();
