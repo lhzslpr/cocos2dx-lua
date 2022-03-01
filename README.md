@@ -1,2 +1,2 @@
 # cocos2dx-lua
-#vs2017 + lua + cocos2dx 3.10
+从零开始的cocos2dx工程搭建
