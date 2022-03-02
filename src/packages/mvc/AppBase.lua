@@ -37,6 +37,7 @@ function AppBase:run(initSceneName)
 end
 
 function AppBase:enterScene(sceneName, transition, time, more)
+    print("AppBase:enterScene",sceneName)
     local view = self:createView(sceneName)
     view:showWithScene(transition, time, more)
     return view

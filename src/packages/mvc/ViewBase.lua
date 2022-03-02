@@ -2,6 +2,8 @@
 local ViewBase = class("ViewBase", cc.Node)
 
 function ViewBase:ctor(app, name)
+    print("ViewBase:ctor",app,name)
+    print(debug.traceback())
     self:enableNodeEvents()
     self.app_ = app
     self.name_ = name

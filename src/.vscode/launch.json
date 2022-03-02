@@ -10,9 +10,9 @@
             "request": "launch",
             "runtimeType": "Cocos2",
             "localRoot": "${workspaceRoot}",
-            "commandLine": "-workdir ${workspaceRoot}/ -file src/main.lua",
+            "commandLine": "-workdir ${workspaceRoot}/../ -file src/main.lua",
             "port": 7003,
-            "exePath": "${workspaceRoot}/simulator/win32/LhzProjectLua.exe",
+            "exePath": "${workspaceRoot}/../simulator/win32/LhzProjectLua.exe",
             "fileExtNames": [
                 ".lua",
                 ".txt",
