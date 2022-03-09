@@ -1,1 +1,7 @@
+Lua调试：
 vscode调试lua需要以src为根目录打开文件夹
+
+
+编译APK：
+在目录E:\_cocos2dx-lua_project\frameworks\runtime-src\proj.android-studio下
+执行命令 cocos compile -p android --android-studio --ap android-22

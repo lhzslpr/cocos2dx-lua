@@ -1,5 +1,6 @@
 frameworks/cocos2d-x
-frameworks/runtime-src/proj.*
+frameworks/runtime-src/proj.android
+frameworks/runtime-src/proj.win32
 runtime/
 res/
 simulator/win32/res/
