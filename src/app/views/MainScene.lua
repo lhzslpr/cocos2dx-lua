@@ -8,9 +8,16 @@ function MainScene:onCreate()
     print("log console")
     self:createResoueceNode("MainScene/MainScene.csb")
 
-    -- display.newSprite("HelloWorld.png")
-    -- :move(display.center)
-    -- :addTo(self.resourceNode_)
+    
+    local node = display.newSprite("HelloWorld.png")
+    node:move(display.center)
+    node:addTo(self.resourceNode_)
+
+    local mv1 = cc.MoveBy:create(3,cc.p(-100,-100))
+    local mv2 = cc.MoveBy:create(3,cc.p(100,100)) 
+    local action = cc.RepeatForever:create(cc.Sequence:create(mv1,mv2))
+    node:runAction(action)
+
 end
 
 return MainScene
