@@ -1,6 +1,6 @@
 frameworks/cocos2d-x
 frameworks/runtime-src/proj.android
-frameworks/runtime-src/proj.win32
+#frameworks/runtime-src/proj.win32
 runtime/
 res/
 simulator/win32/res/
@@ -9,3 +9,11 @@ simulator/win32/src/
 *.exe
 *.ilk
 *.pdb
+*.ipch
+*.db
+*.suo
+*.opendb
+Solution.*
+LhzProjectLua.*
+CONOUT
+*.apk
